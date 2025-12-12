@@ -15,6 +15,8 @@
   --border-color: #e0e0e0;
   --success-color: #2e7d32;
   --danger-color: #c62828;
+  --danger-background: #ffebee;
+  --warning-color: #ff6b35;
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
@@ -47,7 +49,50 @@
   --border-color: #404040;
   --success-color: #66bb6a;
   --danger-color: #ef5350;
+  --danger-background: #5d1f1f;
+  --warning-color: #ff8c42;
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
+
+/* Overdue Todo Card Styling */
+.todo-card--overdue {
+  color: var(--danger-color);
+  background-color: var(--danger-background);
+  border-left: 4px solid var(--danger-color);
+}
+
+.todo-card--due-today {
+  color: var(--warning-color);
+  border-left: 4px solid var(--warning-color);
+}
+
+.todo-card--completed {
+  opacity: 0.6;
+}
+
+.overdue-icon {
+  margin-right: var(--space-xs);
+  font-size: 1.1em;
+}
+
+.status-label {
+  display: inline-block;
+  margin-left: var(--space-xs);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.status-label--overdue {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.status-label--due-today {
+  background-color: var(--warning-color);
+  color: white;
+}
+

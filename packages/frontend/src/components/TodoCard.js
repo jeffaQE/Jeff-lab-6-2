@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { isOverdue, isDueToday, getDaysOverdue } from '../utils/dateUtils';
 
 function TodoCard({ todo, onToggle, onEdit, onDelete, isLoading }) {
   const [isEditing, setIsEditing] = useState(false);
@@ -62,6 +63,43 @@ function TodoCard({ todo, onToggle, onEdit, onDelete, isLoading }) {
     });
   };
 
+  // Determine CSS class based on todo status
+  const getStatusClassName = () => {
+    if (todo.completed) return 'completed';
+    if (!todo.dueDate) return '';
+    if (isOverdue(todo.dueDate)) return 'todo-card--overdue';
+    if (isDueToday(todo.dueDate)) return 'todo-card--due-today';
+    return '';
+  };
+
+  // Determine if overdue icon should be shown
+  const shouldShowOverdueIcon = () => {
+    return !todo.completed && todo.dueDate && isOverdue(todo.dueDate);
+  };
+
+  // Determine if due today icon should be shown
+  const shouldShowDueTodayIcon = () => {
+    return !todo.completed && todo.dueDate && isDueToday(todo.dueDate);
+  };
+
+  // Generate status label for overdue/due today
+  const getStatusLabel = () => {
+    if (todo.completed || !todo.dueDate) return null;
+    
+    if (isOverdue(todo.dueDate)) {
+      const days = getDaysOverdue(todo.dueDate);
+      const plural = days === 1 ? 'day' : 'days';
+      return <span className="status-label status-label--overdue">Overdue {days} {plural}</span>;
+    }
+    
+    if (isDueToday(todo.dueDate)) {
+      return <span className="status-label status-label--due-today">Due today</span>;
+    }
+    
+    return null;
+  };
+
+
   if (isEditing) {
     return (
       <div className="todo-card todo-card-edit">
@@ -107,7 +145,7 @@ function TodoCard({ todo, onToggle, onEdit, onDelete, isLoading }) {
   }
 
   return (
-    <div className={`todo-card ${todo.completed ? 'completed' : ''}`}>
+    <div className={`todo-card ${getStatusClassName()}`}>
       <input
         type="checkbox"
         checked={todo.completed === 1}
@@ -118,10 +156,15 @@ function TodoCard({ todo, onToggle, onEdit, onDelete, isLoading }) {
       />
 
       <div className="todo-content">
-        <h3 className="todo-title">{todo.title}</h3>
+        <h3 className="todo-title">
+          {shouldShowOverdueIcon() && <span className="overdue-icon">⚠️</span>}
+          {shouldShowDueTodayIcon() && <span className="overdue-icon">⚠️</span>}
+          {todo.title}
+        </h3>
         {todo.dueDate && (
           <p className="todo-due-date">
             Due: {formatDate(todo.dueDate)}
+            {getStatusLabel()}
           </p>
         )}
       </div>

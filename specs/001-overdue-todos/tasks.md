@@ -20,8 +20,8 @@
 
 **Purpose**: Create directory structure and foundational utilities needed by all user stories
 
-- [ ] T001 Create packages/frontend/src/utils/ directory for date utility functions
-- [ ] T002 Create packages/frontend/src/utils/__tests__/ directory for date utility tests
+- [X] T001 Create packages/frontend/src/utils/ directory for date utility functions
+- [X] T002 Create packages/frontend/src/utils/__tests__/ directory for date utility tests
 
 **Checkpoint**: Directory structure ready for development
 
@@ -35,28 +35,28 @@
 
 ### Tests for Date Utilities (TDD: Write First)
 
-- [ ] T003 [P] Write test for isOverdue() with past date in packages/frontend/src/utils/__tests__/dateUtils.test.js
-- [ ] T004 [P] Write test for isOverdue() with today's date in packages/frontend/src/utils/__tests__/dateUtils.test.js
-- [ ] T005 [P] Write test for isOverdue() with future date in packages/frontend/src/utils/__tests__/dateUtils.test.js
-- [ ] T006 [P] Write test for isOverdue() with null date in packages/frontend/src/utils/__tests__/dateUtils.test.js
-- [ ] T007 [P] Write test for isDueToday() with today's date in packages/frontend/src/utils/__tests__/dateUtils.test.js
-- [ ] T008 [P] Write test for isDueToday() with yesterday's date in packages/frontend/src/utils/__tests__/dateUtils.test.js
-- [ ] T009 [P] Write test for isDueToday() with null date in packages/frontend/src/utils/__tests__/dateUtils.test.js
-- [ ] T010 [P] Write test for getDaysOverdue() with various date ranges in packages/frontend/src/utils/__tests__/dateUtils.test.js
+- [X] T003 [P] Write test for isOverdue() with past date in packages/frontend/src/utils/__tests__/dateUtils.test.js
+- [X] T004 [P] Write test for isOverdue() with today's date in packages/frontend/src/utils/__tests__/dateUtils.test.js
+- [X] T005 [P] Write test for isOverdue() with future date in packages/frontend/src/utils/__tests__/dateUtils.test.js
+- [X] T006 [P] Write test for isOverdue() with null date in packages/frontend/src/utils/__tests__/dateUtils.test.js
+- [X] T007 [P] Write test for isDueToday() with today's date in packages/frontend/src/utils/__tests__/dateUtils.test.js
+- [X] T008 [P] Write test for isDueToday() with yesterday's date in packages/frontend/src/utils/__tests__/dateUtils.test.js
+- [X] T009 [P] Write test for isDueToday() with null date in packages/frontend/src/utils/__tests__/dateUtils.test.js
+- [X] T010 [P] Write test for getDaysOverdue() with various date ranges in packages/frontend/src/utils/__tests__/dateUtils.test.js
 
 **Checkpoint**: Run tests - all should FAIL (red phase) ✅
 
 ### Implementation of Date Utilities
 
-- [ ] T011 Implement isOverdue() function in packages/frontend/src/utils/dateUtils.js
-- [ ] T012 Implement isDueToday() function in packages/frontend/src/utils/dateUtils.js
-- [ ] T013 Implement getDaysOverdue() function in packages/frontend/src/utils/dateUtils.js
+- [X] T011 Implement isOverdue() function in packages/frontend/src/utils/dateUtils.js
+- [X] T012 Implement isDueToday() function in packages/frontend/src/utils/dateUtils.js
+- [X] T013 Implement getDaysOverdue() function in packages/frontend/src/utils/dateUtils.js
 
 **Checkpoint**: Run tests - all should PASS (green phase) ✅
 
 ### Refactoring
 
-- [ ] T014 Refactor dateUtils.js for code quality (DRY, defensive null checks) while keeping tests green
+- [X] T014 Refactor dateUtils.js for code quality (DRY, defensive null checks) while keeping tests green
 
 **Checkpoint**: Foundation complete - date utilities tested and ready. User stories can now begin in parallel.
 
@@ -70,38 +70,38 @@
 
 ### CSS Styling for User Story 1
 
-- [ ] T015 [P] [US1] Add overdue color variables to packages/frontend/src/styles/theme.css (--danger-color-light, --danger-color-dark, --danger-background-light, --danger-background-dark)
-- [ ] T016 [P] [US1] Add CSS class .todo-card--overdue in packages/frontend/src/styles/theme.css
-- [ ] T017 [P] [US1] Add CSS class .overdue-icon in packages/frontend/src/styles/theme.css
-- [ ] T018 [P] [US1] Add CSS class .todo-card--completed in packages/frontend/src/styles/theme.css (if not exists)
+- [X] T015 [P] [US1] Add overdue color variables to packages/frontend/src/styles/theme.css (--danger-color-light, --danger-color-dark, --danger-background-light, --danger-background-dark)
+- [X] T016 [P] [US1] Add CSS class .todo-card--overdue in packages/frontend/src/styles/theme.css
+- [X] T017 [P] [US1] Add CSS class .overdue-icon in packages/frontend/src/styles/theme.css
+- [X] T018 [P] [US1] Add CSS class .todo-card--completed in packages/frontend/src/styles/theme.css (if not exists)
 
 ### Tests for TodoCard Component (TDD: Write First)
 
-- [ ] T019 [US1] Write test: overdue todo renders with red text color in packages/frontend/src/components/__tests__/TodoCard.test.js
-- [ ] T020 [US1] Write test: overdue todo renders warning icon (⚠️) before title in packages/frontend/src/components/__tests__/TodoCard.test.js
-- [ ] T021 [US1] Write test: overdue todo renders with background tint in packages/frontend/src/components/__tests__/TodoCard.test.js
-- [ ] T022 [US1] Write test: completed overdue todo has NO overdue styling in packages/frontend/src/components/__tests__/TodoCard.test.js
-- [ ] T023 [US1] Write test: todo without due date has NO overdue styling in packages/frontend/src/components/__tests__/TodoCard.test.js
-- [ ] T024 [US1] Write test: todo due today has NO overdue styling in packages/frontend/src/components/__tests__/TodoCard.test.js
+- [X] T019 [US1] Write test: overdue todo renders with red text color in packages/frontend/src/components/__tests__/TodoCard.test.js
+- [X] T020 [US1] Write test: overdue todo renders warning icon (⚠️) before title in packages/frontend/src/components/__tests__/TodoCard.test.js
+- [X] T021 [US1] Write test: overdue todo renders with background tint in packages/frontend/src/components/__tests__/TodoCard.test.js
+- [X] T022 [US1] Write test: completed overdue todo has NO overdue styling in packages/frontend/src/components/__tests__/TodoCard.test.js
+- [X] T023 [US1] Write test: todo without due date has NO overdue styling in packages/frontend/src/components/__tests__/TodoCard.test.js
+- [X] T024 [US1] Write test: todo due today has NO overdue styling in packages/frontend/src/components/__tests__/TodoCard.test.js
 
 **Checkpoint**: Run tests - all new tests should FAIL (red phase) ✅
 
 ### Implementation for TodoCard Component
 
-- [ ] T025 [US1] Import isOverdue from utils/dateUtils in packages/frontend/src/components/TodoCard.js
-- [ ] T026 [US1] Add function to determine CSS class based on overdue status in packages/frontend/src/components/TodoCard.js
-- [ ] T027 [US1] Apply conditional className to todo card container in packages/frontend/src/components/TodoCard.js
-- [ ] T028 [US1] Render warning icon (⚠️) before title for overdue todos in packages/frontend/src/components/TodoCard.js
-- [ ] T029 [US1] Ensure completed todos skip overdue rendering logic in packages/frontend/src/components/TodoCard.js
+- [X] T025 [US1] Import isOverdue from utils/dateUtils in packages/frontend/src/components/TodoCard.js
+- [X] T026 [US1] Add function to determine CSS class based on overdue status in packages/frontend/src/components/TodoCard.js
+- [X] T027 [US1] Apply conditional className to todo card container in packages/frontend/src/components/TodoCard.js
+- [X] T028 [US1] Render warning icon (⚠️) before title for overdue todos in packages/frontend/src/components/TodoCard.js
+- [X] T029 [US1] Ensure completed todos skip overdue rendering logic in packages/frontend/src/components/TodoCard.js
 
 **Checkpoint**: Run tests - all User Story 1 tests should PASS (green phase) ✅
 
 ### Manual Testing for User Story 1
 
-- [ ] T030 [US1] Manual test: Create todo with past due date → verify red text, icon, background tint
-- [ ] T031 [US1] Manual test: Mark overdue todo complete → verify all indicators removed
-- [ ] T032 [US1] Manual test: Create todo without due date → verify normal styling
-- [ ] T033 [US1] Manual test: Verify WCAG AA color contrast for red text on backgrounds
+- [X] T030 [US1] Manual test: Create todo with past due date → verify red text, icon, background tint
+- [X] T031 [US1] Manual test: Mark overdue todo complete → verify all indicators removed
+- [X] T032 [US1] Manual test: Create todo without due date → verify normal styling
+- [X] T033 [US1] Manual test: Verify WCAG AA color contrast for red text on backgrounds
 
 **Checkpoint**: User Story 1 is fully functional and independently testable ✅
 
@@ -115,23 +115,23 @@
 
 ### Tests for User Story 2 (TDD: Write First)
 
-- [ ] T034 [US2] Write test: todo becomes overdue when system date advances in packages/frontend/src/components/__tests__/TodoCard.test.js
-- [ ] T035 [US2] Write test: overdue styling removed when todo marked complete in packages/frontend/src/components/__tests__/TodoCard.test.js
-- [ ] T036 [US2] Write test: overdue status recalculated on component re-render in packages/frontend/src/components/__tests__/TodoCard.test.js
+- [X] T034 [US2] Write test: todo becomes overdue when system date advances in packages/frontend/src/components/__tests__/TodoCard.test.js
+- [X] T035 [US2] Write test: overdue styling removed when todo marked complete in packages/frontend/src/components/__tests__/TodoCard.test.js
+- [X] T036 [US2] Write test: overdue status recalculated on component re-render in packages/frontend/src/components/__tests__/TodoCard.test.js
 
 **Checkpoint**: Run tests - all new tests should FAIL (red phase) ✅
 
 ### Implementation for User Story 2
 
-- [ ] T037 [US2] Ensure isOverdue() called on every render (no caching/memoization of overdue status) in packages/frontend/src/components/TodoCard.js
-- [ ] T038 [US2] Update TodoList to re-render on data changes in packages/frontend/src/components/TodoList.js
+- [X] T037 [US2] Ensure isOverdue() called on every render (no caching/memoization of overdue status) in packages/frontend/src/components/TodoCard.js
+- [X] T038 [US2] Update TodoList to re-render on data changes in packages/frontend/src/components/TodoList.js
 
 **Checkpoint**: Run tests - all User Story 2 tests should PASS (green phase) ✅
 
 ### Manual Testing for User Story 2
 
-- [ ] T039 [US2] Manual test: Create todo with future date → mock system date change → verify overdue styling appears on refresh
-- [ ] T040 [US2] Manual test: Leave app open with overdue todo → refresh next day → verify styling still accurate
+- [X] T039 [US2] Manual test: Create todo with future date → mock system date change → verify overdue styling appears on refresh
+- [X] T040 [US2] Manual test: Leave app open with overdue todo → refresh next day → verify styling still accurate
 
 **Checkpoint**: User Story 2 is fully functional - overdue status dynamically calculated ✅
 
@@ -145,43 +145,43 @@
 
 ### CSS Styling for User Story 3
 
-- [ ] T041 [P] [US3] Add warning color variables to packages/frontend/src/styles/theme.css (--warning-color-light, --warning-color-dark)
-- [ ] T042 [P] [US3] Add CSS class .todo-card--due-today in packages/frontend/src/styles/theme.css
-- [ ] T043 [P] [US3] Add CSS class .status-label in packages/frontend/src/styles/theme.css
-- [ ] T044 [P] [US3] Add CSS class .status-label--overdue in packages/frontend/src/styles/theme.css
-- [ ] T045 [P] [US3] Add CSS class .status-label--due-today in packages/frontend/src/styles/theme.css
+- [X] T041 [P] [US3] Add warning color variables to packages/frontend/src/styles/theme.css (--warning-color-light, --warning-color-dark)
+- [X] T042 [P] [US3] Add CSS class .todo-card--due-today in packages/frontend/src/styles/theme.css
+- [X] T043 [P] [US3] Add CSS class .status-label in packages/frontend/src/styles/theme.css
+- [X] T044 [P] [US3] Add CSS class .status-label--overdue in packages/frontend/src/styles/theme.css
+- [X] T045 [P] [US3] Add CSS class .status-label--due-today in packages/frontend/src/styles/theme.css
 
 ### Tests for User Story 3 (TDD: Write First)
 
-- [ ] T046 [US3] Write test: todo due yesterday shows "Overdue 1 day" label in packages/frontend/src/components/__tests__/TodoCard.test.js
-- [ ] T047 [US3] Write test: todo due 7 days ago shows "Overdue 7 days" label in packages/frontend/src/components/__tests__/TodoCard.test.js
-- [ ] T048 [US3] Write test: todo due today shows "Due today" label with yellow styling in packages/frontend/src/components/__tests__/TodoCard.test.js
-- [ ] T049 [US3] Write test: overdue label positioned after due date in packages/frontend/src/components/__tests__/TodoCard.test.js
-- [ ] T050 [US3] Write test: "Due today" icon positioned before title in packages/frontend/src/components/__tests__/TodoCard.test.js
-- [ ] T051 [US3] Write test: all overdue todos use same base styling regardless of days overdue in packages/frontend/src/components/__tests__/TodoCard.test.js
-- [ ] T052 [US3] Write test: completed todos show NO labels in packages/frontend/src/components/__tests__/TodoCard.test.js
+- [X] T046 [US3] Write test: todo due yesterday shows "Overdue 1 day" label in packages/frontend/src/components/__tests__/TodoCard.test.js
+- [X] T047 [US3] Write test: todo due 7 days ago shows "Overdue 7 days" label in packages/frontend/src/components/__tests__/TodoCard.test.js
+- [X] T048 [US3] Write test: todo due today shows "Due today" label with yellow styling in packages/frontend/src/components/__tests__/TodoCard.test.js
+- [X] T049 [US3] Write test: overdue label positioned after due date in packages/frontend/src/components/__tests__/TodoCard.test.js
+- [X] T050 [US3] Write test: "Due today" icon positioned before title in packages/frontend/src/components/__tests__/TodoCard.test.js
+- [X] T051 [US3] Write test: all overdue todos use same base styling regardless of days overdue in packages/frontend/src/components/__tests__/TodoCard.test.js
+- [X] T052 [US3] Write test: completed todos show NO labels in packages/frontend/src/components/__tests__/TodoCard.test.js
 
 **Checkpoint**: Run tests - all new tests should FAIL (red phase) ✅
 
 ### Implementation for User Story 3
 
-- [ ] T053 [US3] Import isDueToday and getDaysOverdue from utils/dateUtils in packages/frontend/src/components/TodoCard.js
-- [ ] T054 [US3] Create getStatusLabel() helper function to generate label text in packages/frontend/src/components/TodoCard.js
-- [ ] T055 [US3] Render "Overdue X days" label after due date for overdue todos in packages/frontend/src/components/TodoCard.js
-- [ ] T056 [US3] Render "Due today" label after due date for due-today todos in packages/frontend/src/components/TodoCard.js
-- [ ] T057 [US3] Apply yellow/warning styling to due-today todos in packages/frontend/src/components/TodoCard.js
-- [ ] T058 [US3] Render caution icon (⚠️) before title for due-today todos in packages/frontend/src/components/TodoCard.js
-- [ ] T059 [US3] Handle plural/singular for days (1 day vs 7 days) in packages/frontend/src/components/TodoCard.js
+- [X] T053 [US3] Import isDueToday and getDaysOverdue from utils/dateUtils in packages/frontend/src/components/TodoCard.js
+- [X] T054 [US3] Create getStatusLabel() helper function to generate label text in packages/frontend/src/components/TodoCard.js
+- [X] T055 [US3] Render "Overdue X days" label after due date for overdue todos in packages/frontend/src/components/TodoCard.js
+- [X] T056 [US3] Render "Due today" label after due date for due-today todos in packages/frontend/src/components/TodoCard.js
+- [X] T057 [US3] Apply yellow/warning styling to due-today todos in packages/frontend/src/components/TodoCard.js
+- [X] T058 [US3] Render caution icon (⚠️) before title for due-today todos in packages/frontend/src/components/TodoCard.js
+- [X] T059 [US3] Handle plural/singular for days (1 day vs 7 days) in packages/frontend/src/components/TodoCard.js
 
 **Checkpoint**: Run tests - all User Story 3 tests should PASS (green phase) ✅
 
 ### Manual Testing for User Story 3
 
-- [ ] T060 [US3] Manual test: Create todo due yesterday → verify "Overdue 1 day" label
-- [ ] T061 [US3] Manual test: Create todo due last week → verify "Overdue 7 days" label
-- [ ] T062 [US3] Manual test: Create todo due today → verify "Due today" label with yellow styling
-- [ ] T063 [US3] Manual test: Verify label positioning (after due date) is correct
-- [ ] T064 [US3] Manual test: Verify icon positioning (before title) is correct for both states
+- [X] T060 [US3] Manual test: Create todo due yesterday → verify "Overdue 1 day" label
+- [X] T061 [US3] Manual test: Create todo due last week → verify "Overdue 7 days" label
+- [X] T062 [US3] Manual test: Create todo due today → verify "Due today" label with yellow styling
+- [X] T063 [US3] Manual test: Verify label positioning (after due date) is correct
+- [X] T064 [US3] Manual test: Verify icon positioning (before title) is correct for both states
 
 **Checkpoint**: User Story 3 is fully functional - all temporal states have clear visual feedback ✅
 
@@ -193,10 +193,10 @@
 
 ### Integration Testing
 
-- [ ] T065 [P] Write test: TodoList renders mix of normal, due-today, and overdue todos correctly in packages/frontend/src/components/__tests__/TodoList.test.js
-- [ ] T066 [P] Write test: Multiple overdue todos with different durations all display properly in packages/frontend/src/components/__tests__/TodoList.test.js
-- [ ] T067 Run full test suite: npm test --workspace=frontend
-- [ ] T068 Verify test coverage ≥ 80%: npm test --workspace=frontend -- --coverage
+- [X] T065 [P] Write test: TodoList renders mix of normal, due-today, and overdue todos correctly in packages/frontend/src/components/__tests__/TodoList.test.js
+- [X] T066 [P] Write test: Multiple overdue todos with different durations all display properly in packages/frontend/src/components/__tests__/TodoList.test.js
+- [X] T067 Run full test suite: npm test --workspace=frontend
+- [X] T068 Verify test coverage ≥ 80%: npm test --workspace=frontend -- --coverage
 
 ### Regression Testing
 
